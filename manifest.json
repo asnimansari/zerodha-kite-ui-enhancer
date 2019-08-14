@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "name": "Kite Enhancer",
+  "version": "1.0",
+  "description": "This extension can be used to make Zerodha Kite web app's UI to occupy the entire screen for enhanced chart view.",
+
+  "icons": {
+    "128": "h_kite_128.png",
+    "48": "h_kite_64.png",
+    "16": "h_kite_16.png"
+  },
+  "page_action": {
+    "default_icon": "h_kite_16.png",
+    "default_title": "Kite Enhancer"
+  },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://kite.zerodha.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "https://kite.zerodha.com/*"
+  ]
+
+}

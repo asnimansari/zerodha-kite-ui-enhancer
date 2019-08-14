@@ -1,0 +1,17 @@
+.app-wrapper{
+    background: black;
+}
+.app .wrapper  {
+    max-width: 100% !important;
+    margin:0 !important;
+}
+
+.app .container .container-right{
+    max-width: 100% !important;
+}
+.app .container .container-left .marketwatch-wrap{
+    width: unset !important;
+}
+.app .container .container-left {
+    flex: 0 0 290px !important;
+}
